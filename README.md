@@ -29,6 +29,9 @@ Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctio
 - Améliorations de l'interface utilisateur pour une meilleure convivialité.
 - Support pour d'autres formats de données, en plus du JSON.
 - Personnalisation des bulles
+- (historique et bd)
+
+## Contexte (A faire)
 
 ## Auteurs
 -   Boukari MARFOUZ
