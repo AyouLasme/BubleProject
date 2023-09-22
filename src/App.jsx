@@ -17,7 +17,6 @@ const navs = [
 function App() {
   return (
     <div class="flex w-screen h-screen ">
-
         <div class="flex flex-col w-1/5 text-white bg-[#20344E] border-r border-gray-300">
             <button class="relative text-sm focus:outline-none group">
                 <div class="flex items-center justify-between w-full h-16 px-4">
@@ -28,11 +27,7 @@ function App() {
                         </svg>
                         <span class="ml-2 leading-none">Uploader un fichier</span>
                     </a>
-                    {/* <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg> */}
                 </div>
-
             </button>
             <div class="flex flex-col flex-grow p-4 overflow-auto">
                 {/* TOP MENU */}
@@ -40,9 +35,7 @@ function App() {
                     {
                         navs.map(nav => <MenuItem item={nav} />)
                     }
-
                 </div>
-
                 {/* BOTTOM MENU */}
                 <div className='flex mt-auto'>
                     <a class="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300"
@@ -85,10 +78,13 @@ function App() {
               </div>
         </div> */}
 
-</div>
 
+        <a className="fixed flex items-center justify-center h-14 w-40 pr-2 bottom-0 right-0 mr-4 mb-4 shadow text-black">
+            {/* <span className="text-sm ml-1 leading-none">@lofiui</span> */}
+            Configuration
+        </a>
 
-
+    </div>
   );
 }
 
