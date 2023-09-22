@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Projet Bubbles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet vise à mettre en place une application fournissant une solution de visualisation interactive de données sous forme de diagrammes à bulles.
 
-## Available Scripts
+![Exemple de Bubbles](images/exemple_bubbles.png)
 
-In the project directory, you can run:
+## Objectif
+L'objectif principal est de créer un outil de visualisation de données flexible et interactif afin de faciliter la compréhension des structures hiérarchiques des données. Les utilisateurs pourront importer des données à partir de fichiers texte et les explorer grâce à des diagrammes à bulles interactifs.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités 
+L'application satisfait les fonctionnalités suivantes:
+- Chargement de données depuis des fichiers texte
+- Visualisation des données sous forme de diagrammes à bulles interactifs.
+- Manipulation des diagrammes : déploiement et masquage des bulles enfants.
+- Sélection de sous-ensembles de bulles de niveau le plus bas.
+- Exportation des sous-ensembles sélectionnés sous forme de fichiers texte ou d'images.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies Utilisées
+- **Langage de Programmation :** [JavaScript](https://www.javascript.com/)
+- **Bibliothèque Front-End :** [ReactJS](https://fr.legacy.reactjs.org/)
+- **Gestionnaire de Paquets :** npm (Node Package Manager)
+- **Outils de Développement :** [Visual Studio Code](https://code.visualstudio.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Perspectives
+Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctionnalités suivantes dans le futur :
+- Améliorations de l'interface utilisateur pour une meilleure convivialité.
+- Support pour d'autres formats de données, en plus du JSON.
+- Personnalisation des bulles
+- (historique et bd)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contexte (A faire)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Auteurs
+-   Boukari MARFOUZ
+-   Lasme AYOU
+-   Nataniel OWAGOKE @geeksceo
+-   Diémé ALETTE
