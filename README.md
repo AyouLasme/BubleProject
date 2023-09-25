@@ -1,8 +1,7 @@
 # Projet Bubbles
+Ce projet a été initié dans le cadre du cursus MIAGE 1 de l'Université de Rennes.Il vise à mettre en place une application fournissant une solution de visualisation interactive de données sous forme de diagrammes à bulles.
 
-Ce projet vise à mettre en place une application fournissant une solution de visualisation interactive de données sous forme de diagrammes à bulles.
-
-![Exemple de Bubbles](images/exemple_bubbles.png)
+![Exemple de Bubbles](images/bubbles-exemples.PNG)
 
 ## Objectif
 L'objectif principal est de créer un outil de visualisation de données flexible et interactif afin de faciliter la compréhension des structures hiérarchiques des données. Les utilisateurs pourront importer des données à partir de fichiers texte et les explorer grâce à des diagrammes à bulles interactifs.
@@ -30,8 +29,6 @@ Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctio
 - Support pour d'autres formats de données, en plus du JSON.
 - Personnalisation des bulles
 - (historique et bd)
-
-## Contexte (A faire)
 
 ## Auteurs
 -   Boukari MARFOUZ
