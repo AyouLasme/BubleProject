@@ -55,8 +55,18 @@ export default function ConfigurationModal() {
                     </div>
                   </div>
                 </div>
-                <div className="p-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime exercitationem enim incidunt delectus sit sapiente illum assumenda, aperiam odio, id deleniti provident adipisci neque eaque officia ipsum nobis tempore! Aliquam?
+                <div className="p-4 flex items-start justify-items-start gap-4">
+
+                  <div className="flex p-2 w-20 h-12 justify-between gap-2 items-center">
+                    <input type="checkbox" name="" id="" className="border" />
+                    <div className="w-12 h-10 bg-gray-400 border"></div>
+                  </div>
+
+                  <div className="flex p-2 w-20 h-12 justify-between gap-2 items-center">
+                    <input type="checkbox" name="" id="" className="border" />
+                    <div className="w-12 h-10 rounded-full bg-gray-400 border"></div>
+                  </div>
+
                 </div>
                 <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
