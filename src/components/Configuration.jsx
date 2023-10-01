@@ -4,7 +4,7 @@ import ConfigurationModal from "./ConfigurationModal";
 
 export default function Configuration() {
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const toggle = () => {
         console.log('console')

@@ -17,7 +17,7 @@ export default function Sidebar(props) {
             {/* TOP MENU */}
             <div className='flex flex-col' >
                 {
-                    props.navs.map((i, nav) => <MenuItem item={nav} key={i} />)
+                    props.navs.map(nav => <MenuItem item={nav} key={nav} />)
                 }
             </div>
             {/* BOTTOM MENU */}
