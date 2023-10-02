@@ -15,9 +15,10 @@ export default function Sidebar(props) {
         </button>
         <div className="flex flex-col flex-grow p-4 overflow-auto">
             {/* TOP MENU */}
+           
             <div className='flex flex-col' >
                 {
-                    props.navs.map((i, nav) => <MenuItem item={nav} key={i} />)
+                    props.navs.map((nav,i) =>  <MenuItem item={nav} key={i} />)
                 }
             </div>
             {/* BOTTOM MENU */}

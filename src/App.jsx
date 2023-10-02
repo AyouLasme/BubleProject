@@ -8,11 +8,23 @@ import MainContent from './components/MainContent';
 
 const navs = [
     {
-        name: 'Uploader un fichier',
+        name: 'Fichier 1',
         link: '/'
       },
       {
-        name: 'another',
+        name: 'Fichier 2',
+        link: '/'
+      },
+      {
+        name: 'Fichier 3',
+        link: '/'
+      },
+      {
+        name: 'Fichier 4',
+        link: '/'
+      },
+      {
+        name: 'Fichier 5',
         link: '/'
       }
 ];
