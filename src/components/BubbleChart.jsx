@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
+import '../App.css';
 
 class BubbleChart extends Component {
   state = {
@@ -8,7 +9,7 @@ class BubbleChart extends Component {
   };
 
   svgRef = React.createRef();
-  width = 800;
+  width = 900;
   height = 600;
   treeLayout = d3.tree().size([this.width, this.height]);
   marginX = 50;
@@ -100,10 +101,11 @@ class BubbleChart extends Component {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <div>
-          <h1>Bubbles</h1>
           <input type="file" accept=".json" onChange={this.telechargerFichier} />
-          <button onClick={this.AfficherBubbles} disabled={!data}>
-            Afficher
+
+        
+          <button className="custom-styling flex-shrink-0 h-10 px-5 ml-2 text-sm font-medium border rounded-lg " onClick={this.AfficherBubbles} disabled={!data}>
+              Afficher
           </button>
           {isBubbleChartVisible && <svg ref={this.svgRef}></svg>}
         </div>

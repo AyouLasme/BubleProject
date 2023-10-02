@@ -9,7 +9,6 @@ export default function MainContent() {
       }
       
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam laborum quibusdam, dolorem mollitia sint, maxime nihil non quisquam eum ducimus? Sint suscipit ratione, enim omnis dolorem id eveniet porro.
       </div>
     </div>
   );
