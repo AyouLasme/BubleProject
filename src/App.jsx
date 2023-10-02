@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import MenuItem from './components/MenuItem';
+// import MenuItem from './components/MenuItem';
 import Configuration from './components/Configuration';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
