@@ -15,7 +15,7 @@ class BubbleChart extends Component {
   marginX = 50;
   marginY = 50;
 
-  telechargerFichier = (event) => {
+  downloadFic = (event) => {
     const file = event.target.files[0];
     if (!file) return;
 
@@ -90,7 +90,7 @@ class BubbleChart extends Component {
       .style('stroke-width', 1);
   };
 
-  AfficherBubbles = () => {
+  showBubbles = () => {
     if (this.state.data) {
       this.setState({ isBubbleChartVisible: true }, this.createBubbleChart);
     }
@@ -101,10 +101,10 @@ class BubbleChart extends Component {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <div>
-          <input type="file" accept=".json" onChange={this.telechargerFichier} />
+          <input type="file" accept=".json" onChange={this.downloadFic} />
 
         
-          <button className="custom-styling flex-shrink-0 h-10 px-5 ml-2 text-sm font-medium border rounded-lg " onClick={this.AfficherBubbles} disabled={!data}>
+          <button className="custom-styling flex-shrink-0 h-10 px-5 ml-2 text-sm font-medium border rounded-lg " onClick={this.showBubbles} disabled={!data}>
               Afficher
           </button>
           {isBubbleChartVisible && <svg ref={this.svgRef}></svg>}
