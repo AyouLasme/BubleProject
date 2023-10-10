@@ -3,6 +3,9 @@ import * as d3 from 'd3';
 import '../App.css';
 
 class BubbleChart extends Component {
+
+  // Permet de gerer la visibilité du graphe et les données
+  // du graphe.
   state = {
     data: null,
     isBubbleChartVisible: false,
@@ -35,7 +38,10 @@ class BubbleChart extends Component {
     d3.select(this.svgRef.current).selectAll('*').remove();
 
     const { data } = this.state;
-    const svg = d3.select(this.svgRef.current).attr('width', this.width).attr('height', this.height);
+    const svg = d3.select(this.svgRef.current)
+    .attr('width', this.width)
+    .attr('height', this.height);
+
     const root = d3.hierarchy(data);
     const treeData = this.treeLayout(root);
 
@@ -103,7 +109,7 @@ class BubbleChart extends Component {
         <div>
           <input type="file" accept=".json" onChange={this.downloadFic} />
 
-        
+
           <button className="custom-styling flex-shrink-0 h-10 px-5 ml-2 text-sm font-medium border rounded-lg " onClick={this.showBubbles} disabled={!data}>
               Afficher
           </button>
