@@ -3,7 +3,7 @@
 
 ## 1.	Diagramme de cas d’utilisation
 Le diagramme de cas d’utilisation ci-dessous illustre les principales fonctionnalités de notre l’application :
-![Diagramme de cas d'utilisaton](images/fiche-technique-images/diagram-class.png)
+![Diagramme de cas d'utilisaton](images/fiche-technique-images/use-case-class.png)
 
 ## 2.	Diagramme de classe
 Après avoir tracé les grandes lignes de la phase de spécification des besoins,
@@ -70,13 +70,16 @@ Dans un premier temps l’utilisateur upload le fichier JSON contenant les donn�
 ![Diagramme de cas d'utilisaton](images/fiche-technique-images/upload-card.png)
 
 ###  	Interface de visualisation du graphe
-Cette interface permet à l’utilisateur de visualiser le graphe correspondant au fichier qu’il a fourni. 
+Cette interface permet à l’utilisateur de visualiser le graphe correspondant au fichier qu’il a fourni.
+
 ![Diagramme de cas d'utilisaton](images/fiche-technique-images/graph.png)
 
 L’utilisateur peut cliquer sur un nœud afin d’afficher ses nœuds enfants.
+
 ![Image graph](images/fiche-technique-images/graph-show-nodes.png)
 
 Il peut aussi cliquer sur un nœud afin de cacher ses nœuds enfants
+
 ![Image graph](images/fiche-technique-images/graph.png)
 
 ###  	Menu à gauche se retrouvant sur chaque interface
