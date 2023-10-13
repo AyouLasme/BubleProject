@@ -3,7 +3,7 @@
 
 ## 1.	Diagramme de cas d’utilisation
 Le diagramme de cas d’utilisation ci-dessous illustre les principales fonctionnalités de notre l’application :
-![Diagramme de cas d'utilisaton](images/fiche-technique-images/use-case-class.png)
+![Diagramme de cas d'utilisaton](images/fiche-technique-images/use-case-diagram.png)
 
 ## 2.	Diagramme de classe
 Après avoir tracé les grandes lignes de la phase de spécification des besoins,
