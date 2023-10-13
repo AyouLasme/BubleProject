@@ -31,7 +31,7 @@ Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctio
 - (historique et bd)
 
 ## Auteurs
--   Boukari MARFOURZ
--   Lasme AYOU
--   Nataniel OWAGOKE @geeksceo
--   Diémé ALETTE
+-   BOUKARI Marfourz
+-   LASME Ayou
+-   OWAGOKE Nataniel @geeksceo
+-   DIEME Alette
