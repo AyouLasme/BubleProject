@@ -2,7 +2,7 @@
 > Dans le cadre de notre projet nous avons utilisé la méthodologie UML pour la modélisation des différents diagrammes.
 
 ## 1.	Diagramme de cas d’utilisation
-Le diagramme de cas d’utilisation ci-dessous illustre les principales fonctionnalités de notre l’application :
+Le diagramme de cas d’utilisation ci-dessous illustre les principales fonctionnalités de notre application :
 ![Diagramme de cas d'utilisaton](images/fiche-technique-images/use-case-diagram.png)
 
 ## 2.	Diagramme de classe
@@ -62,6 +62,8 @@ Quelques règles à respecter pour la mise en place du fichier :
 Les graphes affichés par l’utilisateur sont enregistrés sur sa machine. Il peut ainsi les revoir plus tard sans uploader de nouveaux fichiers. 
 
 ## 5.	Présentation de l’application
+
+**Lien du figma** : [Cliquez ici](https://www.figma.com/proto/TZm9EWTal69oINSglbMriN/PDL?type=design&node-id=2-3&t=95DVnzwM0K2uZk8l-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=2%3A3)
 
 ###  Interface pour l’upload du fichier
 Il s’agit de la première interface que vois l’utilisateur.
