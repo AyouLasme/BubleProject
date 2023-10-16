@@ -13,18 +13,18 @@
     
 ## Configuration de l'environnement de test
 
-    * Prerequis: - Exigences logicielles
-                        + Node.js et npm :  pour exécuter des outils tels que Jest, Babel, Webpack, etc et npm
-                                             (Node   Package Manager), pour installer des dépendances et gérer les packages.
-                        + Environnement de Développement React :  Cela inclut React, ReactDOM et d'autres
-                                                                 dépendances   associées.
+    * Prérequis: - Exigences logicielles
+                        + Node.js : pour exécuter des outils tels que Jest, Babel, Webpack, etc
+                        + npm : (Node Package Manager), pour installer des dépendances et gérer les packages.
+                        + Environnement de Développement React : Cela inclut React, ReactDOM et d'autres
+                                                                 dépendances associées.
                         + Outils de Test : Jest, Enzyme 
-                        + Éditeur de Code : IntelliJ
+                        + Éditeur de Code : Visual Studio Code
                 
-    *Installation : Pour pour configurer l'environnement de test nous aurons quatre étapes:
-                    - Sassurer d'avoir satisfait aux prérequis mentionnés précedemment notemment l'installation de
+    * Installation : Pour pour configurer l'environnement de test nous aurons quatre étapes:
+                    - S'assurer d'avoir satisfait aux prérequis mentionnés précedemment notemment l'installation de
                       Node.Js et npm
-                    - Creation du projet  React
+                    - Création du projet React
                     - Installation des outils de test
                     - configuration de Jest
                     - Ecriture des tests
