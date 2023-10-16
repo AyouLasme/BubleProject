@@ -33,5 +33,5 @@ Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctio
 ## Auteurs
 -   BOUKARI Marfourz
 -   LASME Ayou
--   OWAGOKE Nataniel @geeksceo
+-   OWAGOKE Nataniel
 -   DIEME Alette

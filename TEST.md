@@ -119,7 +119,7 @@ En résumé, le cahier de test actuel reflète les tests effectués sur les fonc
    * Noms: - Ayou LASME
            - Alette DIEME
            - Nataniel OWAGOKE
-           - Marfourz BOUKARY
+           - Marfourz BOUKARI
 
    * Date : 12 Octobre 2023
     
