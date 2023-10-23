@@ -38,12 +38,24 @@ L'application satisfait les fonctionnalités suivantes:
 - **Outils de Développement :** [Visual Studio Code](https://code.visualstudio.com/)
 
 
-## ✨ Perspectives
+## 🔭 Perspectives
 ----------
 Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctionnalités suivantes dans le futur :
 - Améliorations de l'interface utilisateur pour une meilleure convivialité.
 - Support pour d'autres formats de données, en plus du JSON.
 - (historique et bd)
+
+## 📁 Ressources
+----------
+
+Outre ce README, il existe d'autres documents essentiels offrant un aperçu plus détaillé de certains aspects du projet:
+
+- **[DESIGN.md](DESIGN.md)** : Un document d'architecture qui détaille les principaux éléments de l'architecture du projet. Il comprend des modèles statiques (diagramme de classes, diagramme de cas d'utilisations, descriptions de la structure de données, etc). 
+
+- **[INSTALL.md](INSTALL.md)** : Ce guide de démarrage fournit les étapes nécessaires pour construire le projet à partir du code source, exécuter les suites de tests, et lancer le logiciel. 
+
+- **[RECETTE.md](RECETTE.md)** : Ce document décrit les tests à effectuer depuis le front end pour valider les fonctionnalités de l'application.
+
 
 ## 🔗 Auteurs
 ----------
