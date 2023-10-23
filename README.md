@@ -1,4 +1,4 @@
-<h1 align="center">🫧 Projet Bubbles 🫧</h1>
+# **PROJET BUBBLES**
 
 
 ## 📜 Contexte
