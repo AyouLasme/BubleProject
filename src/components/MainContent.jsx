@@ -6,8 +6,6 @@ export default function MainContent() {
   return (
     <div className="w-4/5 p-6 overflow-auto bg-white">
         <BubbleChart />
-
-        <CustomChart />
       <div>
       </div>
     </div>
