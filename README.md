@@ -2,18 +2,17 @@
 
 
 ## 📜 Contexte
-----------
+
 Ce projet s'inscrit dans le cursus MIAGE 1 de l'Université de Rennes. Son principal objectif est d'offrir aux étudiants l'opportunité de mettre en pratique leurs acquis théoriques en matière de développement logiciel. Ainsi, il est centré sur la création d'une application permettant une visualisation interactive de données via des diagrammes à bulles.
 
 ![Exemple de Bubbles](images/bubbles-exemples.PNG)
 
 ## 🎯 Objectif
-----------
+
 L'objectif principal est de créer un outil de visualisation de données flexible et interactif afin de faciliter la compréhension des structures hiérarchiques des données. Les utilisateurs pourront importer des données à partir de fichiers texte et les explorer grâce à des diagrammes à bulles interactifs.
 
-
 ## ⚙️ Fonctionnalités 
-----------
+
 L'application satisfait les fonctionnalités suivantes:
 - Chargement de données depuis des fichiers texte.
 - Visualisation des données sous forme de diagrammes à bulles interactifs.
@@ -31,7 +30,7 @@ L'application satisfait les fonctionnalités suivantes:
 
 
 ## 🚀 Technologies Utilisées
-----------
+
 - **Langage de Programmation :** [JavaScript](https://www.javascript.com/)
 - **Bibliothèque Front-End :** [ReactJS](https://fr.legacy.reactjs.org/)
 - **Gestionnaire de Paquets :** npm (Node Package Manager)
@@ -39,14 +38,13 @@ L'application satisfait les fonctionnalités suivantes:
 
 
 ## 🔭 Perspectives
-----------
+
 Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctionnalités suivantes dans le futur :
 - Améliorations de l'interface utilisateur pour une meilleure convivialité.
 - Support pour d'autres formats de données, en plus du JSON.
 - (historique et bd)
 
 ## 📁 Ressources
-----------
 
 Outre ce README, il existe d'autres documents essentiels offrant un aperçu plus détaillé de certains aspects du projet:
 
@@ -58,7 +56,7 @@ Outre ce README, il existe d'autres documents essentiels offrant un aperçu plus
 
 
 ## 🔗 Auteurs
-----------
+
 -   BOUKARI Marfourz
 -   LASME Ayou
 -   OWAGOKE Nataniel
