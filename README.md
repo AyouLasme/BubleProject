@@ -3,7 +3,7 @@
 
 ## 📜 Contexte
 
-Ce projet s'inscrit dans le cursus MIAGE 1 de l'Université de Rennes. Son principal objectif est d'offrir aux étudiants l'opportunité de mettre en pratique leurs acquis théoriques en matière de développement logiciel. Ainsi, il est centré sur la création d'une application permettant une visualisation interactive de données via des diagrammes à bulles.
+Dans le cadre de l'année universitaire 2023-2024 de la formation MIAGE 1 à l'Université de Rennes 1, ce projet a été conçu pour l'UE "Projet de Développement Logiciel" (PDL). Il nous offre l'opportunité de concrétiser nos connaissances en développement logiciel à travers la création d'une application de visualisation de données via des diagrammes à bulles.
 
 ![Exemple de Bubbles](images/bubbles-exemples.PNG)
 
@@ -42,7 +42,7 @@ L'application satisfait les fonctionnalités suivantes:
 Ce projet est en constante évolution, et nous envisageons d'ajouter les fonctionnalités suivantes dans le futur :
 - Améliorations de l'interface utilisateur pour une meilleure convivialité.
 - Support pour d'autres formats de données, en plus du JSON.
-- (historique et bd)
+- Historique des actions afin de garantir la traçabilité des actions réalisées sur l'application.
 
 ## 📁 Ressources
 
@@ -50,7 +50,7 @@ Outre ce README, il existe d'autres documents essentiels offrant un aperçu plus
 
 - **[DESIGN.md](DESIGN.md)** : Un document d'architecture qui détaille les principaux éléments de l'architecture du projet. Il comprend des modèles statiques (diagramme de classes, diagramme de cas d'utilisations, descriptions de la structure de données, etc). 
 
-- **[INSTALL.md](INSTALL.md)** : Ce guide de démarrage fournit les étapes nécessaires pour construire le projet à partir du code source, exécuter les suites de tests, et lancer le logiciel. 
+- **[INSTALL.md](INSTALL.md)** : Ce guide de démarrage fournit les étapes nécessaires pour construire le projet à partir du code source et lancer l'application. 
 
 - **[RECETTE.md](RECETTE.md)** : Ce document décrit les tests à effectuer depuis le front end pour valider les fonctionnalités de l'application.
 
