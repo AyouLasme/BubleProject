@@ -30,6 +30,7 @@ const navs = [
 ];
 
 function App() {
+  // -[#20344E]
   return (
     <div className="flex w-screen h-screen ">
         <div className="flex flex-col w-1/5 text-white bg-[#20344E] border-r border-gray-300">

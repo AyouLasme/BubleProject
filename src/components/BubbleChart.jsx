@@ -1,12 +1,10 @@
 import React, { Component, useRef, useState } from 'react';
 import '../App.css';
 import { GraphCanvas, useSelection} from 'reagraph';
-import data from '../data.json';
 
-export default function BubbleChart() {
+export default function BubbleChart({data}) {
 
   const graphRef = useRef(null);
-
 
   const [collapsed, setCollapsed] = useState([]);
 
