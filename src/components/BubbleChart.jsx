@@ -8,7 +8,7 @@ export default function BubbleChart() {
   const graphRef = useRef(null);
 
 
-  const [collapsed, setCollapsed] = useState(['2']);
+  const [collapsed, setCollapsed] = useState([]);
 
   const {
     selections,
@@ -39,8 +39,8 @@ export default function BubbleChart() {
       onNodeClick={(node, props) => {
         console.log(node.id.toString())
         console.log(collapsed)
-        if(collapsed.includes(node.id.toString()))
-          setCollapsed(collapsed.filter(n => n !== node.id.toString()));
+        if(collapsed.includes(node.id))
+          setCollapsed(collapsed.filter(n => n !== node.id));
         else
           setCollapsed([...collapsed, node.id])
 
