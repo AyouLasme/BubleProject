@@ -32,14 +32,16 @@ const navs = [
 function App() {
   // -[#20344E]
   return (
-    <div className="flex w-screen h-screen ">
-        <div className="flex flex-col w-1/5 text-white bg-[#20344E] border-r border-gray-300">
+    <div className="flex">
+        <div className="w-1/5 text-white bg-[#20344E]">
             <Sidebar navs={navs} />
         </div>
 
-        <MainContent/>
+        <div className='w-4/5'>
+          <MainContent/>
+          <Configuration/>
+        </div>
 
-        <Configuration/>
 
     </div>
   );

@@ -6,7 +6,7 @@ import data from '../data.json';
 export default function MainContent() {
 
   return (
-    <div className='border h-screen w-screen'>
+    <div className='border'>
         <div className='w-full my-14 flex justify-center items-center'>
             <span className="text-4xl text-blue-950 font-bold">
                 Bubbles

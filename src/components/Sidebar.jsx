@@ -1,22 +1,25 @@
 import MenuItem from "./MenuItem";
 
 export default function Sidebar(props) {
-    return (<>
-        <button className="relative text-sm focus:outline-none group">
-            <div className="flex items-center justify-between w-full h-16 px-4">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium border rounded-lg"
-                    href="#">
-                    <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                    </svg>
-                    <span className="ml-2 leading-none">
-                        Importer un fichier
-                    </span>
-                </a>
-            </div>
-        </button>
-        <div className="flex flex-col flex-grow p-4 overflow-auto">
+    return (
+    <div className="flex flex-col">
+        <div className="h-1/3">
+            <button className="relative text-sm focus:outline-none group">
+                <div className="flex items-center justify-between w-full h-16 px-4">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium border rounded-lg"
+                        href="#">
+                        <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        <span className="ml-2 leading-none">
+                            Importer un fichier
+                        </span>
+                    </a>
+                </div>
+            </button>
+        </div>
+        <div className="h-2/3 border flex flex-col flex-grow p-4 overflow-auto">
             {/* TOP MENU */}
 
             <div className='flex flex-col' >
@@ -26,7 +29,7 @@ export default function Sidebar(props) {
             </div>
 
             <div className="mt-52 h-auto py-4 text-center flex flex-col justify-center items-center">
-                <img src="./documents.svg" className="" alt="" srcset="" />
+                <img src="./documents.svg" className="border" alt="" srcset="" />
                 <span className="text-center">
                     Nous garderons votre historique à porter de main.
                 </span>
@@ -42,5 +45,5 @@ export default function Sidebar(props) {
                 </a>
             </div> */}
         </div>
-    </>)
+    </div>)
 }
