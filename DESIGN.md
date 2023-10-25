@@ -1,10 +1,18 @@
 # Fiche technique
-> Dans le cadre de notre projet nous avons utilisé la méthodologie UML pour la modélisation des différents diagrammes.
+>Dans le cadre de notre projet nous avons utilisé la méthodologie UML pour la modélisation des différents diagrammes.
 
 ## 1.	Diagramme de cas d’utilisation
 Le diagramme de cas d’utilisation ci-dessous illustre les principales fonctionnalités de notre application :
 ![Diagramme de cas d'utilisaton](images/fiche-technique-images/use-case-diagram.png)
 
+
+| Fonctionnalités | Description |
+| ------ | ------ |
+|  Voir l'historique des graphes     |     Doit permettre à l'utilisateur d'avoir accés à tous les graphes qu'il a visualisé et enregistré sur l'application.  |
+|  Visualiser un graphe      |    Cette fonctionnalité permet la visualisation des fichiers JSON sous forme de diagramme à bulles intéractifs. Cette visualisation offre également la possibilité de déployer et masquer les bulles enfants et la sélection des sous-ensembles de bulles.  |
+|Uploader le fichier JSON |             |
+| Exporter le graphe| |
+| Customiser le graphe| |
 ## 2.	Diagramme de classe
 Après avoir tracé les grandes lignes de la phase de spécification des besoins,
 mettons maintenant l’accent sur la spécification de l’architecture de système.
@@ -18,7 +26,7 @@ mettons maintenant l’accent sur la spécification de l’architecture de syst�
 
 ## 3.	Spécifications techniques
 ###     **Formats de données**
-Notre programme prend en entré un fichier JSON qui contient la description de notre graphe. Le fichier contient un objet JSON qui représente notre graphe. Ci-dessous un exemple du format :
+Notre programme prend en entrée un fichier JSON qui contient la description de notre graphe. Le fichier contient un objet JSON qui représente notre graphe. Ci-dessous un exemple du format :
 ```json
 {
    	nodes: [
