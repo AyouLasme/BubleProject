@@ -3,8 +3,8 @@ import MenuItem from "./MenuItem";
 export default function Sidebar(props) {
     return (
     <div className="flex flex-col">
-        <div className="h-1/3">
-            <button className="relative text-sm focus:outline-none group">
+        <div>
+            <button className="h-[5rem] w-[15rem] bg-[#1b2c43] text-sm focus:outline-none group" style={{position: 'fixed'}}>
                 <div className="flex items-center justify-between w-full h-16 px-4">
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium border rounded-lg"
@@ -19,19 +19,24 @@ export default function Sidebar(props) {
                 </div>
             </button>
         </div>
-        <div className="h-2/3 border flex flex-col flex-grow p-4 overflow-auto">
+
+        <div className="mt-[10rem] h-2/3 flex flex-col flex-grow p-4 overflow-auto">
             {/* TOP MENU */}
 
-            <div className='flex flex-col' >
+            {/* <div className='flex flex-col' >
                 {
                     props.navs.map((nav,i) =>  <MenuItem item={nav} key={i} />)
                 }
-            </div>
+            </div> */}
 
-            <div className="mt-52 h-auto py-4 text-center flex flex-col justify-center items-center">
-                <img src="./documents.svg" className="border" alt="" srcset="" />
+
+            <div className="mt-32 h-auto py-4 text-center flex flex-col justify-center items-center">
+                <img src="./documents.svg" className="" alt="" srcset="" />
                 <span className="text-center">
-                    Nous garderons votre historique à porter de main.
+                    Nous garderons votre historique à portée de main. <br />
+                    {/* <span className="mt-8 font-semibold">
+                        Let's start !
+                    </span> */}
                 </span>
             </div>
             {/* BOTTOM MENU */}

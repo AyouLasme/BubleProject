@@ -29,15 +29,19 @@ const navs = [
       }
 ];
 
+
+
 function App() {
+
+  const sidebarWidth = 15;
   // -[#20344E]
   return (
     <div className="flex">
-        <div className="w-1/5 text-white bg-[#20344E]">
+        <div className={`w-[${sidebarWidth}rem] sidebar text-white bg-[#20344E]`}>
             <Sidebar navs={navs} />
         </div>
 
-        <div className='w-4/5'>
+        <div className={`ml-[${sidebarWidth}rem] w-full`}>
           <MainContent/>
           <Configuration/>
         </div>
