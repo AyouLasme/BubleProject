@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Herr+Von+Muellerhoff&family=Poppins:ital,wght@1,500&display=swap');
+
+@layer components {
+  .custom-backdrop {
+    @apply backdrop-blur-sm bg-white/25
+  }
+
+  .floated-btn {
+    @apply pr-2 mr-4 mb-4 shadow-lg mx-auto h-14 w-48 flex items-center justify-center cursor-pointer
+  }
+}
 
 body {
   margin: 0;
@@ -14,4 +26,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.herr-von {
+  font-family: "Agbalumo", cursive;
 }

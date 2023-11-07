@@ -42,14 +42,21 @@
   background-color: rgb(32, 52, 78);
 }
 
-.sidebar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  /* width: 160px; */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+#sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  /* background-color: #111;  */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  /* padding-top: 20px; */
+  overflow-x: hidden;
+}
+
+#main-content {
+  height: 100%;
+  position: fixed;
+  /* z-index: 1; */
+  /* top: 0;
+  bottom: 0;
+  right: 0; */
+  overflow-x: hidden;
 }

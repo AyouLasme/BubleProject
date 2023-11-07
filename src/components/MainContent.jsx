@@ -9,29 +9,25 @@ export default function MainContent() {
 
   return (
     <div>
-        <div className='w-full my-14 flex justify-center items-center'>
-            <span className="text-4xl text-blue-950 font-bold">
-                Bubbles
+        <div
+            className="h-[5rem] w-full flex justify-center items-center border">
+            <span className="text-4xl  text-blue-950 font-bold herr-von">
+                PDL - Bubble project
             </span>
         </div>
-        <div className="w-full p-6 overflow-auto bg-white flex flex-col justify-center">
+        <div className="w-full px-6 overflow-auto flex flex-col justify-center">
 
             {
                 data.nodes.length != 0
                 ? <BubbleChart data={data} />
                 : (
                     /* onboarding screen */
-                    <div className=' mx-auto w-3/5 h-auto'>
+                    <div className="mx-auto w-3/5 h-auto">
                         <OnBoarding/>
                     </div>
                 )
             }
 
-
-
-
-            <div>
-            </div>
         </div>
     </div>
   );

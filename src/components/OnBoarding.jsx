@@ -23,7 +23,7 @@ export default function OnBoarding() {
         >
 
             {
-                onboardings.map((imgSrc, index) => <div key={index} ><img src={`${imgSrc}`}/></div>)
+                onboardings.map((imgSrc, index) => <div key={index} ><img alt={`${imgSrc}`} src={`${imgSrc}`}/></div>)
             }
         </Carousel>
 

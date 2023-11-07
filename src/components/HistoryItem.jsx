@@ -1,5 +1,5 @@
 
-export default function MenuItem({item}) {
+export default function HistoryItem({item}) {
     return (
         <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium rounded" href="#">
             {/* <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
