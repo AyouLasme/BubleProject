@@ -49,7 +49,7 @@ function App() {
           <MainContent/>
 
           {/* menu */}
-          <div className="fixed bottom-4 right-4 flex flex-col items-center justify-center">
+          <div className="border fixed bottom-4 right-4 flex flex-col items-center justify-center">
             <UploadBtn />
             <Configuration/>
           </div>

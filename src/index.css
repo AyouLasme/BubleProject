@@ -10,7 +10,7 @@
   }
 
   .floated-btn {
-    @apply pr-2 mr-4 mb-4 shadow-lg mx-auto h-14 w-48 flex items-center justify-center cursor-pointer
+    @apply px-2 mr-4 mb-4 shadow-lg mx-auto h-14 w-48 flex items-center justify-center cursor-pointer
   }
 }
 

@@ -20,7 +20,7 @@ export default function BubbleChart({data}) {
 
   return  (
     <div className='flex justify-center'>
-        <div className='relative w-full h-[800px] flex justify-center'>
+        <div className='relative w-full h-full flex justify-center'>
             <GraphCanvas
                 draggable
                 ref={graphRef}
