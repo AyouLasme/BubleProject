@@ -31,7 +31,7 @@ export default function Sidebar(props) {
 
 
             <div className="mt-32 h-auto py-4 text-center flex flex-col justify-center items-center">
-                <img src="./documents.svg" className="" alt="" srcset="" />
+                <img src="./documents.svg" className="" alt="" srcSet="" />
                 <span className="text-center">
                     Nous garderons votre historique à portée de main. <br />
                     {/* <span className="mt-8 font-semibold">
