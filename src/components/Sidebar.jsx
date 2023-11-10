@@ -8,7 +8,7 @@ export default function Sidebar(props) {
     return (
     <div className="flex flex-col">
         <div className="h-[5rem] w-[15rem] fixed custom-backdrop"  style={{left: 0, top: 0}}>
-            <span className="block mx-auto herr-von text-4xl text-center my-5">
+            <span className="block mx-auto title text-4xl text-center my-5">
                 Bubble
             </span>
         </div>

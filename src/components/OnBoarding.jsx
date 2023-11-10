@@ -1,7 +1,11 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import UploadBtn from "./UploadBtn";
+import { useState } from "react";
 
 export default function OnBoarding() {
+
+
 
     const onboardings = [
         "./onboarding/screen-1.svg",
@@ -27,10 +31,11 @@ export default function OnBoarding() {
             }
         </Carousel>
 
-                <div className='w-full mt-14 flex justify-center items-center'>
+
+                {/* <div className='w-full mt-14 flex justify-center items-center'>
                     <button className='bg-blue-950 hover:bg-slate-400 transition-all text-white px-4 py-2 rounded'>
                         Importer un fichier
                     </button>
-                </div>
+                </div> */}
     </>
 }

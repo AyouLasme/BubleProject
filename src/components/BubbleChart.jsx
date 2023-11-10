@@ -19,25 +19,22 @@ export default function BubbleChart({data}) {
   });
 
   return  (
-    <div className='flex justify-center'>
-        <div className='relative w-full h-full flex justify-center'>
-            <GraphCanvas
-                draggable
-                ref={graphRef}
-                collapsedNodeIds={collapsed}
-                nodes={data.nodes}
-                edges={data.edges}
-                selections={selections}
-                onNodeClick={(node, props) => {
-                    console.log(node.id.toString())
-                    console.log(collapsed)
-                    if(collapsed.includes(node.id))
-                    setCollapsed(collapsed.filter(n => n !== node.id));
-                    else
-                    setCollapsed([...collapsed, node.id])
-                }}
-                onCanvasClick={onCanvasClick} />;
-        </div>
-    </div>);
+    <div className="relative w-full h-full flex justify-center">
+      <GraphCanvas
+        draggable
+        ref={graphRef}
+        collapsedNodeIds={collapsed}
+        nodes={data.nodes}
+        edges={data.edges}
+        selections={selections}
+        onNodeClick={(node, props) => {
+          if(collapsed.includes(node.id))
+            setCollapsed(collapsed.filter(n => n !== node.id));
+          else
+            setCollapsed([...collapsed, node.id])
+        }}
+        onCanvasClick={onCanvasClick} />;
+    </div>
+    );
 
 };
