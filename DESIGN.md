@@ -17,8 +17,11 @@ Le diagramme de cas d’utilisation ci-dessous illustre les principales fonction
 Après avoir tracé les grandes lignes de la phase de spécification des besoins,
 mettons maintenant l’accent sur la spécification de l’architecture de système.
 ### 	**Règles de gestion**
+- Un graphe a un et seul noeud principal.
 - Un graphe peut avoir plusieurs nœuds.
 - Un nœud appartient à un et un seul graphe
+- Un noeud ne peut pas être en relation avec lui même.
+- Un noeud a un et un seul noeud parent.
 - Une relation a un et un seul nœud source.
 - Une relation a un et un seul nœud destination.
 ### 	**Schéma du diagramme de classe**
