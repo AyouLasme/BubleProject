@@ -1,7 +1,7 @@
 
 export default function HistoryItem({item}) {
     return (
-        <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium rounded" href="#">
+        <a className="flex items-center flex-shrink-0 h-10 px-3 text-sm font-medium rounded" href={item.name}>
             {/* <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg> */}

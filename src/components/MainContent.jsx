@@ -10,6 +10,7 @@ import UploadBtn from './UploadBtn';
 import Configuration from './Configuration';
 import Header from './Header';
 import { graphChecker } from '../utils';
+import { saveGraph } from '../store';
 
 export default function MainContent() {
 
@@ -22,8 +23,11 @@ export default function MainContent() {
         const checkerResult = graphChecker(data)
         if(!checkerResult.result)
             setErrorMessage(checkerResult.errorMessage)
-        else
+        else{
+            saveGraph("First graph", data)
             setData(data);
+        }
+            
             
     }
 
