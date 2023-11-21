@@ -10,9 +10,9 @@ Le diagramme de cas d’utilisation ci-dessous illustre les principales fonction
 | ------ | ------ |
 |  Voir l'historique des graphes     |     Doit permettre à l'utilisateur d'avoir accés à tous les graphes qu'il a visualisé et enregistré sur l'application.  |
 |  Visualiser un graphe      |    Cette fonctionnalité permet la visualisation des fichiers JSON sous forme de diagramme à bulles intéractifs. Cette visualisation offre également la possibilité de déployer et masquer les bulles enfants et la sélection des sous-ensembles de bulles.  |
-|Uploader le fichier JSON |             |
-| Exporter le graphe| |
-| Customiser le graphe| |
+|Uploader le fichier JSON |    Permet de charger le fichier json contenant décrivant le graphe.         |
+| Exporter le graphe| Cette fonctionalité permet de télécharger le graphe en cours de visualisation. |
+| Customiser le graphe| Quant à cette fonctionnalité elle permet de modifier le style d'un graphe (la couleur des noeuds , leurs formes , ...)|
 ## 2.	Diagramme de classe
 Après avoir tracé les grandes lignes de la phase de spécification des besoins,
 mettons maintenant l’accent sur la spécification de l’architecture de système.
@@ -53,6 +53,14 @@ Notre programme prend en entrée un fichier JSON qui contient la description de 
 	}
  }
 
+```
+
+**Couleur** : Il s'agit des codes couleurs(se reporter au site [https://htmlcolorcodes.com/fr/](https://htmlcolorcodes.com/fr/)) pour avoir la liste.
+
+**Forme** : La forme doit avoir une valeur parmi ceux qui suivent : 
+
+```json
+Rectangle, Triangle, Carre, Cercle
 ```
 
 ### Desciption
