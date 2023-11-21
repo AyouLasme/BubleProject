@@ -5,7 +5,7 @@ import Configuration from './components/Configuration';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import UploadBtn from './components/UploadBtn';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { getKeys } from "./store";
 
 // const navs = [
@@ -35,7 +35,8 @@ function App() {
 
   const [navs, setNavs] = useState([]);
 
-  getKeys().then((result)=>{
+  useEffect( () => {
+    getKeys().then((result)=>{
       const navElements = []
       result.forEach(name => {
         navElements.push({
@@ -45,6 +46,9 @@ function App() {
       });
       setNavs(navElements)
   })
+  }, []);
+
+
 
   const sidebarWidth = 15;
   // -[#20344E]

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BubbleChart from './BubbleChart';
 import CustomChart from './CustomChart';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'; 
-import data from '../data.json';
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 import ErrorMessage from './ErrorMessage';
 
 import OnBoarding from './OnBoarding';
@@ -10,7 +9,8 @@ import UploadBtn from './UploadBtn';
 import Configuration from './Configuration';
 import Header from './Header';
 import { graphChecker } from '../utils';
-import { saveGraph } from '../store';
+import { saveGraph, getOneGraph, getLastGraph } from '../store';
+import { async } from 'q';
 
 export default function MainContent() {
 
@@ -18,24 +18,48 @@ export default function MainContent() {
 
     const [errorMessage, setErrorMessage ] = useState("")
 
+    const [loading, setLoading] = useState(true);
+
+    useEffect( () => {
+
+        const loadGraphToShow = async ()=>{
+             // Get the current URL
+            const currentUrl = window.location.href;
+            const graphName = decodeURIComponent(currentUrl.split("/").pop())
+            if(graphName)
+                setData(await getOneGraph(graphName))
+            else{
+                setData(await getLastGraph(graphName))
+            }
+        }
+
+        loadGraphToShow()
+       
+        
+      }, []);
+
     const callBack = (data) => {
         setErrorMessage("")
         const checkerResult = graphChecker(data)
+        
         if(!checkerResult.result)
             setErrorMessage(checkerResult.errorMessage)
         else{
-            saveGraph("First graph", data)
-            setData(data);
-        }
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            const graphName = `${randomNumber} graph`
+            saveGraph(graphName, checkerResult.graph)
+            window.location.href = `${graphName}`;
             
-            
+        }      
     }
 
     return (
         <div className="flex flex-col justify-around h-full bg-[#efeeee]">
+
             <Header />
+
             <div className="w-full h-full overflow-auto flex flex-col justify-center">
-              
+
                 {
                     data != null
                     ? <BubbleChart data={data} />
@@ -44,12 +68,12 @@ export default function MainContent() {
                             <OnBoarding/>
                             {
                                 errorMessage &&
-                                    <ErrorMessage 
-                                        title="Oups. Format de fichier incorrect !!!." 
-                                        subtitle={ errorMessage  + ".Corrigez le fichier et importez le de nouveau.Vous y êtes presque !"} 
+                                    <ErrorMessage
+                                        title="Oups. Format de fichier incorrect !!!."
+                                        subtitle={ errorMessage  + ".Corrigez le fichier et importez le de nouveau.Vous y êtes presque !"}
                                     />
                             }
-                           
+
                             <div className="mt-16 flex items-center justify-center">
                                 <UploadBtn parentCallBack={callBack} />
                             </div>

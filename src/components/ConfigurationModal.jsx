@@ -1,15 +1,22 @@
-import { Fragment, useRef, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import { Fragment, useRef, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react'; // Don't forget to import it
+import Circle from '@uiw/react-color-circle';
 
-export default function ConfigurationModal() {
-  const [open, setOpen] = useState(true)
+export default function ConfigurationModal({ open, setOpen }) {
+  const [color, setColor] = useState('#F44E3B'); // Initial color 
+  const cancelButtonRef = useRef(null);
 
-  const cancelButtonRef = useRef(null)
+  const handleClose = () => {
+    setOpen(false); 
+  };
+
+  const handleColorChange = (color) => {
+    setColor(color.hex); // Update the color state when a new color is selected
+  };
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
+      <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={handleClose}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -21,8 +28,7 @@ export default function ConfigurationModal() {
         >
           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
         </Transition.Child>
-
-        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <Transition.Child
               as={Fragment}
@@ -34,52 +40,42 @@ export default function ConfigurationModal() {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#20344E] sm:mx-0 sm:h-10 sm:w-10">
-                      {/* <ExclamationTriangleIcon className="h-6 w-6 text-red-600" aria-hidden="true" /> */}
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
-                      </svg>
-
+                      {/* Icon placeholder */}
                     </div>
-                    <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                      <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        Personnalisation du graphe
+                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
+                        Couleur
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-
+                          Selectionner une couleur pour personnaliser les noeuds de votre graphe.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="p-4 flex items-start justify-items-start gap-4">
-
-                  <div className="flex p-2 w-20 h-12 justify-between gap-2 items-center">
-                    <input type="checkbox" name="" id="" className="border" />
-                    <div className="w-12 h-10 bg-gray-400 border"></div>
-                  </div>
-
-                  <div className="flex p-2 w-20 h-12 justify-between gap-2 items-center">
-                    <input type="checkbox" name="" id="" className="border" />
-                    <div className="w-12 h-10 rounded-full bg-gray-400 border"></div>
-                  </div>
-
+                <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                  <Circle
+                    colors={['#F44E3B', '#FE9200', '#FCDC00', '#DBDF00', '#0088FE', '#2B8EAD', '#2F2F2F', '#2ECC71', '#AA8CC5', '#D24726', '#B8B8B8', '#FFFFFF']}
+                    color={color}
+                    onChange={handleColorChange}
+                  />
                 </div>
                 <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-[#20344E] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                    onClick={() => setOpen(false)}
+                    className="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-[#20344E] text-base font-medium text-white hover:bg-[#162d48] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#20344E] sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                    onClick={handleClose}
                   >
-                    Appliquer
+                    Apply
                   </button>
                   <button
                     type="button"
-                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                    onClick={() => setOpen(false)}
+                    className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#20344E] sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                    onClick={handleClose}
                     ref={cancelButtonRef}
                   >
                     Cancel
@@ -91,5 +87,5 @@ export default function ConfigurationModal() {
         </div>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }

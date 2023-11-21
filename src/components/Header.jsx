@@ -3,7 +3,7 @@
 export default function Header() {
     return (
         <div
-            className="w-full h-[5rem] fixed top-0 right-0 z-50 flex justify-center gap-4 items-center custom-backdrop">
+            className="w-full h-[5rem] top-0 right-0 z-50 flex justify-center gap-4 items-center">
             <span className="text-4xl my-5 text-blue-950 font-bold title">
                 PDL - Bubble project
             </span>
