@@ -1,6 +1,6 @@
 import React, { Component, useRef, useState } from 'react';
 import '../App.css';
-import { GraphCanvas, useSelection} from 'reagraph';
+import { GraphCanvas, RadialMenu, useSelection} from 'reagraph';
 
 export default function BubbleChart({data}) {
 
@@ -11,7 +11,7 @@ export default function BubbleChart({data}) {
   const {
     selections,
     onNodeClick,
-    onCanvasClick
+    onCanvasClick,
   } = useSelection({
     ref: graphRef,
     nodes: data.nodes,
@@ -27,12 +27,34 @@ export default function BubbleChart({data}) {
         nodes={data.nodes}
         edges={data.edges}
         selections={selections}
-        onNodeClick={(node, props) => {
-          if(collapsed.includes(node.id))
-            setCollapsed(collapsed.filter(n => n !== node.id));
-          else
-            setCollapsed([...collapsed, node.id])
-        }}
+        // onNodePointerOver={(node) => alert(node.label)}
+        // onNodeClick={(node, props) => {
+        //   if(collapsed.includes(node.id))
+        //     setCollapsed(collapsed.filter(n => n !== node.id));
+        //   else
+        //     setCollapsed([...collapsed, node.id])
+        // }}
+        contextMenu={({ data, additional, onClose }) => (
+          <RadialMenu
+            onClose={onClose}
+            items={[
+              {
+                label: 'Add Node',
+                onClick: () => {
+                  alert('Add a node');
+                  onClose();
+                }
+              },
+              {
+                label: 'Remove Node',
+                onClick: () => {
+                  alert('Remove the node');
+                  onClose();
+                }
+              }
+            ]}
+          />
+        )}
         onCanvasClick={onCanvasClick} />;
     </div>
     );
