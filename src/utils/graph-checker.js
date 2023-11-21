@@ -1,4 +1,4 @@
-import validators from "./validators";
+import validators from "./helpers";
 
 
 export function graphChecker(graph){
@@ -9,14 +9,14 @@ export function graphChecker(graph){
                 result : false,
                 errorMessage : validatorResult
             }
-        } 
+        }
 
     }
 
     return {
         result : true,
         errorMessage : ""
-    } 
+    }
 }
 
 

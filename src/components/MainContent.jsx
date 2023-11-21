@@ -9,7 +9,7 @@ import OnBoarding from './OnBoarding';
 import UploadBtn from './UploadBtn';
 import Configuration from './Configuration';
 import Header from './Header';
-import { graphChecker } from '../utils';
+import { graphChecker } from '../utils/graph-checker';
 
 export default function MainContent() {
 
@@ -24,7 +24,6 @@ export default function MainContent() {
             setErrorMessage(checkerResult.errorMessage)
         else
             setData(data);
-
     }
 
     return (
