@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import UploadBtn from './components/UploadBtn';
 import { useState,useEffect } from 'react';
-import { getKeys } from "./store";
+import { getKeys } from './utils/storage-manager';
 
 // const navs = [
 //     {

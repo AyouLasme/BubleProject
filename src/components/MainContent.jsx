@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BubbleChart from './BubbleChart';
 
-import CustomChart from './CustomChart';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 import ErrorMessage from './ErrorMessage';
 
@@ -10,7 +9,7 @@ import UploadBtn from './UploadBtn';
 import Configuration from './Configuration';
 import Header from './Header';
 import { graphChecker } from '../utils/graph-checker';
-import { saveGraph, getOneGraph, getLastGraph } from '../store';
+import { saveGraph, getOneGraph, getLastGraph } from '../utils/storage-manager';
 import { async } from 'q';
 
 export default function MainContent() {
