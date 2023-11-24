@@ -17,7 +17,7 @@ export default function UploadBtn({ parentCallBack }) {
             const reader = new FileReader();
             reader.onload = (e) => {
                 try {
-                    parentCallBack(JSON.parse(e.target.result));
+                    parentCallBack(e.target.result);
                     // console.log(JSON.parse(e.target.result));
                     // this.setState({ data: JSON.parse(e.target.result) });
                 } catch (error) {

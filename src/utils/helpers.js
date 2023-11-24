@@ -1,8 +1,11 @@
 const validators = [
 
+
     function attributCheckers(graph){
         const keys = ["nodes", "edges"]
         const yourGraphKeys = Object.getOwnPropertyNames(graph)
+        if(!graph)
+            return "Contenu du fichier vide."
         for(let key of keys){
             if(!yourGraphKeys.includes(key))
             {

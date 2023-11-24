@@ -5,32 +5,50 @@ import Configuration from './components/Configuration';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import UploadBtn from './components/UploadBtn';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { getKeys } from "./store";
 
-const navs = [
-    {
-        name: 'Fichier 1',
-        link: '/'
-      },
-      {
-        name: 'Fichier 2',
-        link: '/'
-      },
-      {
-        name: 'Fichier 3',
-        link: '/'
-      },
-      {
-        name: 'Fichier 4',
-        link: '/'
-      },
-      {
-        name: 'Fichier 5',
-        link: '/'
-      }
-];
+// const navs = [
+//     {
+//         name: 'Fichier 1',
+//         link: '/'
+//       },
+//       {
+//         name: 'Fichier 2',
+//         link: '/'
+//       },
+//       {
+//         name: 'Fichier 3',
+//         link: '/'
+//       },
+//       {
+//         name: 'Fichier 4',
+//         link: '/'
+//       },
+//       {
+//         name: 'Fichier 5',
+//         link: '/'
+//       }
+// ];
 
 function App() {
+
+  const [navs, setNavs] = useState([]);
+
+  useEffect( () => {
+    getKeys().then((result)=>{
+      const navElements = []
+      result.forEach(name => {
+        navElements.push({
+          name : name,
+          link : `/${name}`
+        })
+      });
+      setNavs(navElements)
+  })
+  }, []);
+
+
 
   const sidebarWidth = 15;
   // -[#20344E]

@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@uiw/react-color-circle": "^2.0.1",
     "d3": "^7.8.5",
+    "localforage": "^1.10.0",
     "react": "^18.2.0",
     "react-color": "^2.19.3",
     "react-dom": "^18.2.0",

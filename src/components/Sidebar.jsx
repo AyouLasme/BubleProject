@@ -1,7 +1,7 @@
+import { useEffect, useRef,useState } from "react";
 import HistoryItem from "./HistoryItem";
 
-export default function Sidebar(props) {
-
+ export default function Sidebar(props) {
 
     return (
     <div className="flex flex-col">
@@ -13,15 +13,15 @@ export default function Sidebar(props) {
 
         {/* The vertical margin is necessary because the logo at the
         top and the button at the bottom are fixed in relation to the screen. */}
+
         <div className="my-[5rem] h-full flex flex-col flex-grow p-4 overflow-auto">
             {/* TOP MENU */}
-            <div className='flex flex-col' >
+            {
+                props.navs.length > 0 ? <div className='flex flex-col'  >
                 {
                     props.navs.map((nav,i) =>  <HistoryItem item={nav} key={i} />)
                 }
-            </div>
-
-            <div className="mt-[5rem] h-auto text-center flex flex-col justify-center items-center">
+            </div> :  <div className="mt-[5rem] h-auto text-center flex flex-col justify-center items-center">
                 <img src="./documents.svg" className="" alt="" srcSet="" />
                 <span className="text-center">
                     Nous garderons votre historique à portée de main. <br />
@@ -30,6 +30,11 @@ export default function Sidebar(props) {
                     </span> */}
                 </span>
             </div>
+            }
+
+
+
+
             {/* BOTTOM MENU */}
         </div>
 
