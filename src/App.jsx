@@ -50,7 +50,6 @@ function App() {
 
           <MainContent/>
 
-
         </div>
 
 

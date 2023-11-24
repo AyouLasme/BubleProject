@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import BubbleChart from './BubbleChart';
-import CustomChart from './CustomChart';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
-import data from '../data.json';
 import ErrorMessage from './ErrorMessage';
 
 import OnBoarding from './OnBoarding';
@@ -20,10 +17,14 @@ export default function MainContent() {
     const callBack = (data) => {
         setErrorMessage("")
         const checkerResult = graphChecker(data)
-        if(!checkerResult.result)
+        if(!checkerResult.result) {
             setErrorMessage(checkerResult.errorMessage)
-        else
+            console.log('Graph checker: Bad datum !')
+        }
+        else {
+            console.log('Graph checker: Good datum !')
             setData(data);
+        }
     }
 
     return (

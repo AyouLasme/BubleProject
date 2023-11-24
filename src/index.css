@@ -9,6 +9,10 @@
     @apply backdrop-blur-sm bg-white/25
   }
 
+  .custom-backdrop-2 {
+    @apply backdrop-blur-sm bg-white/25
+  }
+
   .floated-btn {
     @apply px-2 my-2 shadow-inner mx-auto h-14 w-48 text-base flex items-center justify-center cursor-pointer rounded-md
   }

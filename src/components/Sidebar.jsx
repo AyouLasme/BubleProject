@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import HistoryItem from "./HistoryItem";
-import UploadBtn from "./UploadBtn";
 
 export default function Sidebar(props) {
 
